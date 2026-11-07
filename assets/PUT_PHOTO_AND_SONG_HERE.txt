@@ -1,0 +1,9 @@
+Add your own media files to this folder using these names:
+gallery-1.jpg through gallery-6.jpg
+her-eyes.jpg
+her-smile.jpg
+your-song.mp3
+background-music.mp3
+your-voice.mp3
+
+The gallery images display together as a scrapbook grid. Background music begins after the visitor taps Open your letter. It pauses when the song or voice recording starts and resumes afterward. The last page is password-protected; the current password is 312026.
