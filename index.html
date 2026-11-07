@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b16"><title>A Little Birthday Surprise ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><span>🌹</span><span>♡</span><span>🌸</span><span>✦</span><span>🌹</span><span>♡</span><span>🌷</span><span>✧</span></div>
+  <div class="birthday-splash" id="birthdaySplash" aria-hidden="true"><div>Happy Birthday</div><span>♡</span></div>
+  <audio id="backgroundMusic" src="assets/background-music.mp3" preload="auto" loop></audio>
+  <main class="app-shell">
+    <header class="site-brand"><span class="brand-rose">🌹</span><span id="siteTitle">A LITTLE BIRTHDAY SURPRISE</span><span class="brand-rose">🌹</span></header>
+
+    <section class="screen active" id="welcome" aria-label="Welcome">
+      <div class="welcome-content">
+        <div class="tiny-label">A LITTLE SOMETHING, JUST FOR YOU</div>
+        <div class="envelope-wrap"><div class="envelope" id="envelope"><div class="envelope-back"></div><div class="letter-peek"><span>For someone special</span><b>♡</b></div><div class="envelope-front"></div><div class="envelope-flap"></div><div class="wax-seal">♡</div></div></div>
+        <h1>A letter, just for you</h1><p class="intro arabic" dir="rtl">في حاجة صغيرة معمولة مخصوص ليكي.. افتحيها براحتك ♡</p>
+        <button class="primary-btn" id="openLetter">Open your letter <span>♡</span></button>
+        <p class="small-note">Made with a little extra care ✧</p>
+      </div>
+    </section>
+
+    <section class="screen" id="gallery" aria-label="Photo gallery">
+      <div class="screen-heading"><p class="eyebrow">CHAPTER 01 · LITTLE MOMENTS</p><h2>A few lovely <em>memories</em></h2><p class="arabic muted" dir="rtl">شوية صور حلوة، وكل صورة ليها حكاية صغيرة ♡</p></div>
+      <div class="memory-grid" id="memoryGrid">
+        <figure class="memory-card"><div class="gallery-placeholder"><span>♡</span><b>Your photo #1</b><small>assets/gallery-1.jpg</small></div><img src="assets/gallery-1.jpg" alt="Photo memory 1"><figcaption>little memory ♡</figcaption></figure>
+        <figure class="memory-card"><div class="gallery-placeholder"><span>✿</span><b>Your photo #2</b><small>assets/gallery-2.jpg</small></div><img src="assets/gallery-2.jpg" alt="Photo memory 2"><figcaption>little memory ♡</figcaption></figure>
+        <figure class="memory-card"><div class="gallery-placeholder"><span>✧</span><b>Your photo #3</b><small>assets/gallery-3.jpg</small></div><img src="assets/gallery-3.jpg" alt="Photo memory 3"><figcaption>little memory ♡</figcaption></figure>
+        <figure class="memory-card"><div class="gallery-placeholder"><span>♡</span><b>Your photo #4</b><small>assets/gallery-4.jpg</small></div><img src="assets/gallery-4.jpg" alt="Photo memory 4"><figcaption>little memory ♡</figcaption></figure>
+        <figure class="memory-card"><div class="gallery-placeholder"><span>🌹</span><b>Your photo #5</b><small>assets/gallery-5.jpg</small></div><img src="assets/gallery-5.jpg" alt="Photo memory 5"><figcaption>little memory ♡</figcaption></figure>
+        <figure class="memory-card"><div class="gallery-placeholder"><span>✿</span><b>Your photo #6</b><small>assets/gallery-6.jpg</small></div><img src="assets/gallery-6.jpg" alt="Photo memory 6"><figcaption>little memory ♡</figcaption></figure>
+      </div>
+      <p class="arabic page-caption" dir="rtl">في صور بتفضل حلوة مش بس عشان شكلها، لكن عشان بتفكّرنا بإحساس لطيف. 🌹</p>
+      <div class="nav-row"><button class="quiet-btn" data-go="welcome">← Back</button><button class="primary-btn" data-go="eyes">Next <span>♡</span></button></div>
+    </section>
+
+    <section class="screen" id="eyes" aria-label="Eyes page">
+      <div class="screen-heading"><p class="eyebrow">CHAPTER 02 · YOUR EYES</p><h2>Eyes full of <em>stories</em></h2><p class="arabic muted" dir="rtl">في تفاصيل صغيرة بتفضل في البال من غير ما تحاول.</p></div>
+      <div class="feature-photo rose-frame"><div class="single-placeholder" id="eyesPlaceholder"><span>✧</span><b>Your eyes photo</b><small>assets/her-eyes.jpg</small></div><img id="eyesPhoto" src="assets/her-eyes.jpg" alt="Her eyes"></div>
+      <div class="quote-card"><span class="quote-mark">“</span><p class="arabic" dir="rtl">في عيون بتشد الانتباه لجمالها، وعيون تانية بتخلي الواحد يفضل فاكرها حتى بعد ما يبعد نظره عنها.. وعيونك من النوع التاني. ♡</p><span class="rose-sprig">🌹</span></div>
+      <div class="nav-row"><button class="quiet-btn" data-go="gallery">← Back</button><button class="primary-btn" data-go="smile">Next <span>♡</span></button></div>
+    </section>
+
+    <section class="screen" id="smile" aria-label="Smile page">
+      <div class="screen-heading"><p class="eyebrow">CHAPTER 03 · THAT SMILE</p><h2>Your smile, your <em>magic</em></h2><p class="arabic muted" dir="rtl">ابتسامة بسيطة، بس بتسيب إحساس حلو.</p></div>
+      <div class="feature-photo smile-frame"><div class="single-placeholder" id="smilePlaceholder"><span>☼</span><b>Your smile photo</b><small>assets/her-smile.jpg</small></div><img id="smilePhoto" src="assets/her-smile.jpg" alt="Her smile"></div>
+      <div class="quote-card blush"><span class="quote-mark">“</span><p class="arabic" dir="rtl">ضحكتك من الحاجات اللي بتدي لليوم شكل ألطف، حتى لو كانت مجرد ابتسامة بسيطة من غير سبب. يا رب تفضلي تضحكي من قلبك دايمًا. ♡</p><span class="rose-sprig">🌹</span></div>
+      <div class="nav-row"><button class="quiet-btn" data-go="eyes">← Back</button><button class="primary-btn" data-go="song">Next <span>♫</span></button></div>
+    </section>
+
+    <section class="screen" id="song" aria-label="Song page">
+      <div class="screen-heading"><p class="eyebrow">CHAPTER 04 · YOUR SOUNDTRACK</p><h2>A song for <em>your day</em></h2><p class="arabic muted" dir="rtl">في أغاني بتعرف تقول إحساس الكلام ساعات ما بيعرفش يوصله.</p></div>
+      <div class="vinyl-stage"><div class="vinyl" id="vinylRecord"><div class="vinyl-center">♡</div></div><div class="music-note n1">♫</div><div class="music-note n2">♪</div><div class="music-note n3">♫</div></div>
+      <div class="music-card"><div class="music-art">♫</div><div class="music-info"><strong>Your song goes here</strong><span>A little soundtrack for your day</span><audio id="birthdaySong" controls preload="metadata"><source src="assets/your-song.mp3" type="audio/mpeg">Your browser does not support audio.</audio><small>حط الأغنية بتاعتك في <code>assets/your-song.mp3</code></small></div></div>
+      <p class="arabic page-caption" dir="rtl">مليش بعدك بلاش بعدددددددددددددك يارب نسمع . 🌹</p>
+      <div class="nav-row"><button class="quiet-btn" data-go="smile">← Back</button><button class="primary-btn" data-go="words">Next <span>♡</span></button></div>
+    </section>
+
+    <section class="screen" id="words" aria-label="Compliments page">
+      <div class="screen-heading"><p class="eyebrow">CHAPTER 05 · JUST A FEW WORDS</p><h2>Things worth <em>noticing</em></h2><p class="arabic muted" dir="rtl">مش مجاملة وخلاص.. دي تفاصيل حلوة تستاهل تتقال.</p></div>
+      <div class="compliment-grid">
+        <article class="compliment-card"><span>🌹</span><h3>Your features</h3><p class="arabic" dir="rtl">ملامحك حلوة بطريقة هادية، فيها بساطة وطابع مميز من غير ما تحتاج أي حاجة زيادة.</p></article>
+        <article class="compliment-card"><span>♡</span><h3>Your heart</h3><p class="arabic" dir="rtl">الحلو مش في الشكل وبس، الحلو كمان في طريقتك وفي التفاصيل اللي بتبين طيبة قلبك.</p></article>
+        <article class="compliment-card"><span>✧</span><h3>Your presence</h3><p class="arabic" dir="rtl">في ناس وجودها بيخلّي الكلام ألطف والوقت أخف، وإنتِ من الناس اللي وجودهم بيفرق.</p></article>
+        <article class="compliment-card"><span>☼</span><h3>Your own way</h3><p class="arabic" dir="rtl">ليكي طريقتك الخاصة، وتفاصيلك اللي بتخليكي مختلفة من غير ما تحاولي تبقي شبه حد.</p></article>
+      </div>
+      <div class="quote-card"><p class="arabic" dir="rtl">ويمكن مش دايمًا بتاخدي بالك من كل الحاجات الحلوة اللي فيكي، بس أتمنى تفتكري إنك تستاهلي تشوفي نفسك بعين أحن، وتدي لنفسك نفس اللطف اللي بتديه لغيرك. ♡</p><span class="rose-sprig">🌹</span></div>
+      <div class="random-compliment"><p class="eyebrow">A RANDOM LITTLE COMPLIMENT</p><p class="arabic" id="randomCompliment" dir="rtl">اضغطي وشوفي مجاملة صغيرة ليكي ♡</p><button class="primary-btn" id="complimentButton" type="button">قوليلي حاجة حلوة 🌹</button></div>
+      <div class="nav-row"><button class="quiet-btn" data-go="song">← Back</button><button class="primary-btn" data-go="letter">Next <span>♡</span></button></div>
+    </section>
+
+    <section class="screen" id="letter" aria-label="Birthday letter">
+      <div class="screen-heading"><p class="eyebrow">CHAPTER 06 · A LETTER FOR YOU</p><h2>From the heart, <em>to you</em></h2></div>
+      <article class="long-letter">
+        <div class="letter-rose">🌹</div>
+        <p class="arabic" dir="rtl">كل سنة وإنتِ طيبة يا أجمل روح، ويا رب السنة الجديدة من عمرك تكون أهدى على قلبك، وأحن عليكي، ومليانة حاجات حلوة شبهك.</p>
+        <p class="arabic" dir="rtl">أتمنى تلاقي فيها أسباب كتير تضحكي، وأيام تعدّي عليكي وإنتِ مطمنة، وناس وجودهم يريحك مش يتعبك. أتمنى كل حاجة نفسك فيها تقرّب منك، وكل حاجة شايلاها في قلبك تلاقي لها طريق للحل.</p>
+        <p class="arabic" dir="rtl">إنتِ جميلة، وده مش كلام عن الملامح بس؛ فيكي تفاصيل لطيفة، وطريقة خاصة، ووجود بيقدر يسيب أثر حلو حتى من غير مجهود. عيونك، وضحكتك، وملامحك، وحتى الحاجات الصغيرة اللي يمكن إنتِ مش واخدة بالك منها، كلها جزء من الصورة الحلوة اللي بتخليكي إنتِ.</p>
+        <p class="arabic" dir="rtl">فخلي بالك من نفسك، وافتكري إنك مش مطالبة تبقي قوية طول الوقت، ولا إن كل يوم لازم يكون مثالي. من حقك ترتاحي، وتفرحي، وتاخدي وقتك، وتختاري لنفسك اللي يريح قلبك. ويا رب تفضلي دايمًا محاطة بالحب واللطف والطمأنينة، وتفضلي شايفة في نفسك الحاجات الحلوة اللي تستاهل تتشاف.</p>
+        <p class="arabic" dir="rtl">كل سنة وإنتِ بخير، وكل سنة وفي حياتك ورد أكتر، وضحك أكتر، وأيام أحن.
+           Happy Birthday, beautiful soul. ♡</p>
+        <div class="letter-signoff">With warm wishes <span>♡</span></div>
+      </article>
+      <div class="export-actions"><button class="quiet-btn" id="saveLetterImage" type="button">Save as image ↓</button><button class="quiet-btn" id="saveLetterPdf" type="button">Save as PDF / Print ↗</button></div>
+      <div class="nav-row"><button class="quiet-btn" data-go="words">← Back</button><button class="primary-btn" data-go="finale">One last thing <span>✦</span></button></div>
+    </section>
+
+    <section class="screen finale-screen" id="finale" aria-label="A special final message">
+      <div class="gold-glow"></div>
+      <div class="password-gate" id="passwordGate">
+        <div class="gate-rose">🌹</div><p class="final-eyebrow">SOMETHING SPECIAL IS WAITING</p>
+        <h2>A little secret <em>for you</em></h2>
+        <p class="arabic" dir="rtl">الصفحة الأخيرة دي ليها مكان خاص جدًا.. عشان توصلي لها اكتبي الباسورد، وافتكري إن الباسورد ده تاريخ مميز المفروض تكوني فاكراه. ♡</p>
+        <form id="passwordForm" class="password-form"><label for="pagePassword">التاريخ المميز</label><input id="pagePassword" type="password" inputmode="numeric" autocomplete="off" placeholder="اكتبي التاريخ هنا" maxlength="12" required><button class="primary-btn" type="submit">افتحي الصفحة الخاصة ✦</button><p class="password-error" id="passwordError" aria-live="polite"></p></form>
+        <div class="password-success hidden" id="passwordSuccess" aria-live="polite"><h3 class="arabic" dir="rtl">شاطرة يا غيبوبتي ❤️</h3><p class="arabic" dir="rtl">تقدري دلوقتي تدخلي الصفحة يا بت، دوسي على الزرار عشان تتفتح ♡</p><button class="primary-btn" id="revealFinal" type="button">افتحي الصفحة الخاصة ✨</button></div>
+      </div>
+      <div class="gold-frame hidden" id="finalContent">
+        <div class="gold-topline">✦ &nbsp; JUST BETWEEN THE SEA & THE MOON &nbsp; ✦</div><div class="final-rose">🌹</div>
+        <p class="final-eyebrow">ONE LAST THING, MY MOON</p>
+        <h2>A little promise <em>to remember</em></h2>
+        <div class="final-message arabic" dir="rtl">عايزك دايمًا فاكرة إن مهما حصل، ومهما عدى، ومهما طال الوقت، البحر هيفضل في مكانه وعمره ما هيتحرك يا قمري.</div>
+        <section class="special-date" aria-label="A special date">
+          <p class="date-kicker">A DATE I KEEP CLOSE</p>
+          <h3>3-1-2026</h3>
+          <p class="arabic" dir="rtl">اليوم اللي عرفتك فيه، واليوم اللي بقى مميز على قلبي من غير ما أحتاج أعمله مناسبة عشان أفتكره. ♡</p>
+          <div class="days-count"><strong>316</strong><span>يوم مميز</span></div>
+          <p class="arabic date-note" dir="rtl">316 يوم عرفت فيهم شخص مميز، وأقدر أقول إنهم كانوا من الأيام الحلوة اللي ليها مكان وذكرى مختلفة عندي. ♡</p>
+        </section>
+        <div class="gold-divider">✧ ───── ♡ ───── ✧</div>
+        <p class="arabic final-small" dir="rtl">خدي الكلام ده معاكي، وافتكريه وقت ما تحتاجي تفتكري إن في حاجات بتفضل ثابتة مهما الأيام اتغيرت. 🌙</p>
+        <div class="voice-player"><div class="voice-icon">♫</div><div class="voice-copy"><strong>A little message, in my voice</strong><span>رسالة صغيرة بصوتي ليكي</span><audio id="voiceMessage" controls preload="metadata"><source src="assets/your-voice.mp3" type="audio/mpeg">Your browser does not support audio.</audio><small>ضيف تسجيلك باسم <code>your-voice.mp3</code> داخل فولدر <code>assets</code>.</small></div></div>
+        <div class="export-actions final-export"><button class="quiet-btn" id="saveFinalImage" type="button">Save this page as image ↓</button><button class="quiet-btn" id="saveFinalPdf" type="button">Save as PDF / Print ↗</button></div>
+        <div class="final-footer">made with care, just for you <span>♡</span></div>
+      </div>
+      <div class="nav-row final-nav"><button class="quiet-btn" data-go="letter">← Back to the letter</button><button class="primary-btn" id="startAgain">Read it again ↻</button></div>
+    </section>
+    <footer class="site-footer">A little birthday surprise <span>♡</span></footer>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
